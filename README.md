@@ -20,3 +20,4 @@ A combinational always block is used with a case statement to handle different v
 
 #### Q-2
 ![problem statement](https://github.com/user-attachments/assets/7e5760f6-1ac9-4ba5-88e9-86345c532f30)
+b and c are delayed versions of a. b is delayed by one cycle and c is delayed by 2 cycles with respect to a. The circuit works on the positive edge of the clock. Outputs go to 0 when rstn =0. The reset (rstn) is an asynchronous, active low one.
