@@ -24,5 +24,4 @@ module tb_sequential_circuit;
        $dumpfile(" dump.vcd");
        $dumpvars(1); 
     end
-
 endmodule
