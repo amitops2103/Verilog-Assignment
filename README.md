@@ -2,7 +2,7 @@ Digital VLSI
 --------
 
 
-## Verilog Assignment
+# Verilog Assignment
 ### Q-2
 ![problem statement](https://github.com/user-attachments/assets/7e5760f6-1ac9-4ba5-88e9-86345c532f30)
 select is a 2-bit input to choose the operation.
