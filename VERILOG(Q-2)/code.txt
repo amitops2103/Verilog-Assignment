@@ -1,17 +1,15 @@
-// Code your design here
 module sequential_circuit (input clk, input rstn, input a, output reg b, output reg c);
+
 always @(posedge clk or negedge rstn) begin
     if (!rstn)
         b <= 0; 
     else
         b <= a; 
 end
-
 always @(negedge clk or negedge rstn) begin
     if (!rstn)
         c <= 0;
     else
         c <= b;
 end
-
 endmodule
