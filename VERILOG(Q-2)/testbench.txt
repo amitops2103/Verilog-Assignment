@@ -1,3 +1,4 @@
+`timescale 1ns/1ns
 module tb_sequential_circuit_Q2;
     reg clk;
     reg rstn;
