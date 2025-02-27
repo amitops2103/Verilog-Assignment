@@ -6,11 +6,11 @@ module tb_mux_Q1;
   mux_Q1 test (.s0(s0), .x(x), .y(y), .z(z));
   initial begin
     $monitor("Time=%0t | s0=%b | x=%d | y=%d | z=%d", $time, s0, x, y, z);
-      x = 8'd10; y = 8'd5; 
+      x = 8'd9; y = 8'd5; 
       s0 = 2'b00;
       #10;  //  z = 0
       s0 = 2'b01;
-      #10;  //  z = x + y = 10 + 5 = 15
+      #10;  //  z = x + y
       s0 = 2'b10;
       #10;  //  z = x ^ y
       s0 = 2'b11;
