@@ -1,10 +1,10 @@
-module tb_sequential_circuit;
+module tb_sequential_circuit_Q2;
     reg clk;
     reg rstn;
     reg a;
     wire b;
     wire c;
-  sequential_circuit test (.clk(clk), .rstn(rstn), .a(a), .b(b), .c(c));
+  sequential_circuit_Q2 test (.clk(clk), .rstn(rstn), .a(a), .b(b), .c(c));
     always #5 clk = ~clk; 
     initial begin
       clk = 0;
