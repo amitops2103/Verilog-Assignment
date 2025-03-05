@@ -1,0 +1,10 @@
+module positive_edgedetector (input wire clk, input wire rstn, input wire a, output reg b);
+  always @(posedge clk or negedge rstn) begin
+    if (!rstn) 
+      b <= 0;
+    else if (a) 
+      b <= 1;
+    else 
+      b <= 0;
+  end
+endmodule
