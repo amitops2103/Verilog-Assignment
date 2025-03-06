@@ -10,5 +10,7 @@ module counter (input wire clk, input wire rstn, input wire ena, input wire up_d
           cnt <= cnt - 1;
       end
     end
+    else
+      cnt <= 8'b0;
   end
 endmodule
