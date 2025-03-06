@@ -20,7 +20,7 @@ module counter_tb;
     #20 hold = 0;  // Resume counting
     #50 up_down = 0;  // Change direction to Down
     #50 ena = 0;  // Disable counting
-    #30 ena = 1; hold = 1;  // Enable but hold
+    #30 ena = 1;  // Enable
     #20 rstn = 0;
     #10 rstn = 1;
     #50 $finish; // End simulation
