@@ -1,5 +1,5 @@
 module positive_edgedetector (input wire clk, input wire rstn, input wire a, output reg b);
-   reg [7:0] prev_a; // stores the previous cycle's value of a
+   reg prev_a; // stores the previous cycle's value of a
   always @(posedge clk or negedge rstn) begin
     if (!rstn) begin
       prev_a <= 0;
