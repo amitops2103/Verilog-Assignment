@@ -41,3 +41,31 @@ The reset is async active low.
 The counter remains at 0  while under reset. When out of reset, it counts only if en signal is high, else it remains at 0.  
 The counter upcounts if the signal up_down is high, else it downcounts.  
 If the hold signal is high, the counter pauses at whatever count it is. It continues counting whennhold is low.
+
+
+
+
+
+
+
+
+
+### Q-5
+![WhatsApp Image 2025-03-20 at 10 45 21_90a41097](https://github.com/user-attachments/assets/0abc6097-64aa-457c-9d79-a281750a8ccd)
+![WhatsApp Image 2025-03-25 at 07 41 56_b42e6b40](https://github.com/user-attachments/assets/af56664a-afef-4565-8d89-9abcb48aa229)
+ - Design an arbiter that takes in multiple requests and services them one by one in the priority order $r1 > r2 > r3$
+    - Acknowledgement will be asserted for one cycle for a request. If the request remains high even after that, it will be considered a new request. If multiple requests are asserted at the same time, they will be services in order of priority.
+    - Design a modification to the above problem for _Round-Robin_ priority. At reset you start with the priority $r1 > r2 > r3$, if you service say $r1$ then move it to the end ie. $r2 > r3 > r1$ and so on.
+    - Alongwith the code, please **upload a testplan** too. It may be in the form of a table (xls is good) with the following columns.
+        1. Feature
+        2. Description
+        3. Testcase description
+    - Lets say we identify 4 features to be tested...
+    - 1. Reset
+      2. Single req asserted
+      3. Multiple req asserted
+      4. Consecutive requests on the same line
+    - In the description column mention in your words waht it means and what are the sub-scenarios you want to test in that.
+    - In the testcase description column mention the sequence of operation you would want to do in a testcase.
+    - Doing this will help you understand the fallacies of your design and will help you think of all scenarios while designing itself.
+
