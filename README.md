@@ -69,3 +69,9 @@ If the hold signal is high, the counter pauses at whatever count it is. It conti
     - In the testcase description column mention the sequence of operation you would want to do in a testcase.
     - Doing this will help you understand the fallacies of your design and will help you think of all scenarios while designing itself.
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ACKNOWLEDGEMENT
+
+1. Dr. Saroj Rout (SILICON UNIVERSITY)
+2. Mr. Sujit Panda (SYNOPSYS)
